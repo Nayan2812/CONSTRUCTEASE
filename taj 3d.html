@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full-Screen 3D View</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #root {
+            height: 100%;
+            width: 100%;
+        }
+        .viewer-container, .c-viewer__iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <header class="c-page-header responsive-navigation-slidable">                   
+            <main class="content">
+                <section class="two-columns container view sidebar-right model-container" >
+                    <div class="columns-wrapper">
+                        <div class="left">
+                            <div class="main">
+                                <div class="viewer-wrapper">
+                                    <div class="c-viewer viewer-container">
+                                        <iframe 
+                                            
+                                            class="c-viewer__iframe" 
+                                            src="https://sketchfab.com/models/33149233cefd492b9abdd50fe5a8c921/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" 
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+            </main>
+        </header>
+    </div>
+</body>
+</html>

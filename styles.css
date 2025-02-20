@@ -1,0 +1,433 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebe9e9;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ebe9e9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px !important;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.navbar .logopic{
+    max-width: 250px;
+    margin-right: 100px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    margin-left: -80px;
+
+}
+
+.navbar .logo {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+}
+/* Slideshow styles */
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* Navigation arrows */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Dots */
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #717171;
+}
+/* Banner Section Styling */
+.banner {
+    background: url('home.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.banner-content h1, .banner-content p {
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+    margin-top: -90px;
+    margin-bottom: 100px;
+}
+
+.animate {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #e1e1e1;
+    padding: 50px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background-color: #555;
+}
+/* Apartment Section */
+.apartment-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Apartment Styling */
+.apartment {
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.apartment-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.apartment-details {
+    max-width: 600px;
+}
+
+.apartment-details h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.apartment-details p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.view-options button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-options button:hover {
+    background-color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .apartment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apartment-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .apartment-details {
+        text-align: center;
+    }
+}
+
+/* Bungalow Section */
+.bungalow-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Bungalow Styling */
+.bungalow {
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.bungalow-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.bungalow-details {
+    max-width: 600px;
+}
+
+.bungalow-details h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.bungalow-details p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.view-options button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-options button:hover {
+    background-color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .bungalow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bungalow-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .bungalow-details {
+        text-align: center;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}

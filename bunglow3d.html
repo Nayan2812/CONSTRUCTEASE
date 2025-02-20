@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full-Screen 3D View -Banglow</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        #root {
+            height: 100%;
+            width: 100%;
+        }
+        .viewer-container, .c-viewer__iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <main class="content">
+            <section class="model-container" itemProp="mainEntity" itemscope itemType="http://schema.org/3DModel">
+                <div class="viewer-wrapper">
+                    <div class="c-viewer viewer-container">
+                        <iframe 
+                            title="Rumah Banglow 3D model - Sketchfab" 
+                            class="c-viewer__iframe" 
+                            src="https://sketchfab.com/models/0c48ab6b4e5d47a193c53702b5ff0162/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0" 
+                            id="api-frame" 
+                            allow="autoplay; fullscreen; xr-spatial-tracking" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
